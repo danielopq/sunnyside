@@ -66,7 +66,6 @@ body > div {
 }
 #main-content {
   width: 1440px;
-  ;
   display: grid;
   grid-template-columns: 720px 720px;
   grid-template-rows: 600px 600px 600px;
@@ -74,7 +73,7 @@ body > div {
 }
 #content-transform {
   grid-area: trans;
-  background: white;
+  background: #fffbf8;
 }
 #content-transform > div {
   margin-left: 160px;
@@ -98,7 +97,7 @@ body > div {
 }
 #content-stand {
   grid-area: stand;
-  background: white;
+  background: #fffbf8;
 }
 #content-stand > div {
   margin-left: 110px;
@@ -128,6 +127,47 @@ body > div {
 #content-photography{
   color: hsl(198, 62%, 26%);
 }
+
+#testimonials{
+	height: 780px;
+	background-color: #fffbf8;
+}
+
+#testimonials-title{
+	width: inherit;
+	text-align: center;
+	letter-spacing: 5px;
+	font: 900 20px 'Fraunces';
+	color: hsl(210, 4%, 67%);
+	margin-top: 160px;
+}
+#testimonials-content{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 160px;
+}
+
+#testimonials-content div{
+	text-align: center;
+}
+
+#Emily-pic{background-image:url("../images/image-emily.jpg")}
+#Thomas-pic{background-image: url("../images/image-thomas.jpg")}
+#Jennie-pic{background-image: url("../images/image-jennie.jpg")}
+
+#collage{
+	height: 450px;
+	display: flex;
+	flex-direction: row;
+}
+
+#coll-milk{background-image: url("../images/desktop/image-gallery-milkbottles.jpg")}
+#coll-orange{background-image: url("../images/desktop/image-gallery-orange.jpg")}
+#coll-cone{background-image: url("../images/desktop/image-gallery-cone.jpg")}
+#coll-sugar{background-image: url("../images/desktop/image-gallery-sugarcubes.jpg")}
+
+
 .link {
   font: 18px 'Barlow';
   color: white;
@@ -177,4 +217,46 @@ body > div {
   justify-content: center;
   font: 700 15px 'Fraunces';
   border-radius: 4px;
+}
+
+.client{
+	width: 370px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	margin: 0px 20px;
+	align-items: center;
+}
+
+.client-pic{
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	margin-top: 18px;
+	background-size: contain;
+}
+
+.client-review{
+	font: 600 19px 'Barlow';
+	color:hsl(213, 9%, 39%);
+	line-height: 30px;
+	margin-top: 70px;
+}
+
+.client-name{
+	font: 700 18px 'Fraunces';
+	color: hsl(212, 27%, 19%);
+	margin-top: 70px;
+}
+
+.client-position{
+	font: 600 14px 'Barlow';
+	color: hsl(210, 4%, 67%);
+	margin-top: 15px;
+}
+.collage-pic{
+	width: 360px;
+	height: inherit;
+	background-repeat: no-repeat;
+	background-size:contain;
 }
