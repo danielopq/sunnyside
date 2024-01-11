@@ -49,6 +49,11 @@ body > div {
   column-gap: 60px;
   margin-right: 50px;
 }
+
+#menu-links .link{
+	color:white;
+}
+
 #bt-contact {
   width: 140px;
   height: 56px;
@@ -182,12 +187,49 @@ body > div {
 
 #footer{
 	height: 350px;
-	background-color: hsl(168, 34%, 41%);
+	background-color: #90d4c5;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
 }
+
+
+#footer > div{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+
+#footer-logo{
+	margin-top: 75px;
+}
+
+
+#footer-logo-svg{
+	fill:#2C7566;
+}
+
+#footer-links > div{
+	margin: 45px 30px 90px;
+}
+
+#footer-links .link{
+	color:#2C7566;
+}
+
+#footer-media > div{
+	margin: auto 15px;
+}
+
 .link {
   font: 18px 'Barlow';
-  color: white;
 }
+
+
+
 .content-large {
   display: flex;
   flex-direction: column;
