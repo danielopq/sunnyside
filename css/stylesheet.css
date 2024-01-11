@@ -157,17 +157,33 @@ body > div {
 #Jennie-pic{background-image: url("../images/image-jennie.jpg")}
 
 #collage{
-	height: 450px;
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 360px 360px 360px 360px;
+	grid-template-rows: 450px;
+	grid-template-areas: "c-milk c-orange c-cone c-sugar";
 }
 
-#coll-milk{background-image: url("../images/desktop/image-gallery-milkbottles.jpg")}
-#coll-orange{background-image: url("../images/desktop/image-gallery-orange.jpg")}
-#coll-cone{background-image: url("../images/desktop/image-gallery-cone.jpg")}
-#coll-sugar{background-image: url("../images/desktop/image-gallery-sugarcubes.jpg")}
+#coll-milk{
+	grid-area: c-milk;
+	background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+}
+#coll-orange{
+	grid-area: c-orange;
+	background-image: url("../images/desktop/image-gallery-orange.jpg");
+}
+#coll-cone{
+	grid-area: c-cone;
+	background-image: url("../images/desktop/image-gallery-cone.jpg");
+}
+#coll-sugar{
+	grid-area: c-sugar;
+	background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+}
 
-
+#footer{
+	height: 350px;
+	background-color: hsl(168, 34%, 41%);
+}
 .link {
   font: 18px 'Barlow';
   color: white;
@@ -255,8 +271,6 @@ body > div {
 	margin-top: 15px;
 }
 .collage-pic{
-	width: 360px;
-	height: inherit;
 	background-repeat: no-repeat;
-	background-size:contain;
+	background-size:cover;
 }
