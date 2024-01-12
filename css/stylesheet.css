@@ -204,9 +204,14 @@ body > div {
 }
 
 #footer-logo{
+	width: 170px;
+	height: 50px;
 	margin-top: 75px;
-}
-
+    mask: url("../images/logo.svg");
+    mask-size:170px;
+	mask-repeat: no-repeat;
+    background: #2C7566;
+  }
 
 #footer-logo-svg{
 	fill:#2C7566;
