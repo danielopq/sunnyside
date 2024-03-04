@@ -22,7 +22,7 @@ body > div {
   flex-direction: column;
   align-items: center;
   background: url("../images/desktop/image-header.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 #menu-bar {
   height: 120px;
@@ -54,23 +54,79 @@ body > div {
 	color:white;
 }
 
-#bt-contact {
-  width: 140px;
-  height: 56px;
+#hamburger:hover{
+	cursor:pointer;
+}
+
+#menu-mobile-m {
+  width: 50%;
+  display: none !important;
+	  justify-content:flex-end;
+}
+
+#menu-mobile-m img{
+  width: 25px;
+	margin-right: 25px;
+}
+
+#submenu-mobile{
+	position:absolute;
+	display:none;
+	flex-direction: column;
+	top:80px;
+	z-index: 10;
+}
+
+#submenu-edge{
+	width: 0px;
+	height: 0px;
+	border-right: 20px solid white;
+	border-top: 20px solid transparent;
+	border-left: 20px solid transparent;
+	border-bottom: 20px solid white;
+	align-self: flex-end;
+}
+
+#submenu-buttons{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 320px;
+	height: 300px;
+	background-color: white;
+}
+
+#bt-deck-contact {
   background-color: white;
-  border-radius: 28px;
-  border: none;
-  font: 700 16px 'Fraunces';
   color: black;
 }
+
+#bt-deck-contact:hover {
+	cursor: pointer;
+	background-color: hsla(0, 0%, 100%,0.3);
+	color: white;
+}
+
+#bt-mb-contact {
+  margin: 20px auto;
+  background-color: hsl(51, 99%, 49%);
+  color: black;
+}
+
+#bt-mb-contact:hover {
+	cursor: pointer;
+	background-color: hsla(51, 99%, 49%,0.3);
+}
+
 #creatives {
   font: 900 40px 'Fraunces';
   color: white;
   letter-spacing: 10px;
   margin: 90px auto;
+		text-align: center;
 }
 #main-content {
-  width: 1440px;
   display: grid;
   grid-template-columns: 720px 720px;
   grid-template-rows: 600px 600px 600px;
@@ -93,12 +149,12 @@ body > div {
 #content-egg {
   grid-area: egg;
   background: url("../images/desktop/image-transform.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 #content-cup {
   grid-area: cup;
   background: url("../images/desktop/image-stand-out.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 #content-stand {
   grid-area: stand;
@@ -225,6 +281,10 @@ body > div {
 	color:#2C7566;
 }
 
+#footer-links .link:hover{
+	color:white;
+}
+
 #footer-media > div{
 	margin: auto 15px;
 }
@@ -232,9 +292,22 @@ body > div {
 .link {
   font: 18px 'Barlow';
 }
+.bt-contact{
+  width: 140px;
+  height: 56px;
+  border-radius: 28px;
+  border: none;
+  font: 700 16px 'Fraunces';
+}
+.submenu-link{
+  font: 20px 'Barlow';
+  color:#817f8a;
+}
 
-
-
+.submenu-link:hover{
+  cursor:pointer;
+  color:#dbdae3;
+}
 .content-large {
   display: flex;
   flex-direction: column;
@@ -246,6 +319,7 @@ body > div {
   width: inherit;
   height: 135px;
   font: 900 40px 'Fraunces';
+  color:hsl(212, 27%, 19%);
 }
 .content-lg-paragraph {
   width: inherit;
@@ -280,6 +354,7 @@ body > div {
   justify-content: center;
   font: 700 15px 'Fraunces';
   border-radius: 4px;
+  color:hsl(212, 27%, 19%);
 }
 
 .client{
@@ -320,4 +395,101 @@ body > div {
 .collage-pic{
 	background-repeat: no-repeat;
 	background-size:cover;
+}
+
+.footer-icon:hover{
+	fill:white;
+	cursor:pointer;
+}
+
+@media screen and (max-width: 480px) {
+body > div {
+  width: 375px;
+}
+
+#header {
+  height: 540px;
+	background-image: url("../images/mobile/image-header.jpg");
+}
+	
+#menu-bar{
+  height: 90px;
+}
+#menu-logo {
+  margin-left: 25px;
+}
+#menu-logo img {
+  width: 120px;
+}
+	
+#menu-links {
+	display: none !important;
+}
+
+#menu-mobile-m {
+  display: flex !important;
+}
+
+#creatives {
+  font: 900 35px 'Fraunces';
+  margin: 55px auto;
+}
+#main-content {
+  grid-template-columns: 375px;
+  grid-template-rows: 310px 440px 310px 440px 600px 600px;
+  grid-template-areas: "egg""trans""cup""stand""gdesign""photography";
+}
+#content-transform > div {
+  margin:auto;
+}
+#content-egg {
+	background-image: url("../images/mobile/image-transform.jpg");
+	background-size: cover;
+}
+#content-cup {
+	background-image: url("../images/mobile/image-stand-out.jpg");
+}
+#content-stand > div {
+  margin:auto;
+}
+
+#testimonials{
+	height: 130px;
+}
+
+#testimonials-title{
+	letter-spacing: 5px;
+	font-size: 15px;
+	margin-top: 60px;
+}
+#testimonials-content{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 160px;
+}
+
+#testimonials-content div{
+	text-align: center;
+}
+
+	
+	
+.content-large {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 315px;
+  height: 440px;
+  margin:auto;
+  text-align: center;
+}
+.content-lg-title {
+  height: 100px;
+	font-size: 32px;
+}
+	.learnMore{
+      margin-top: 70px;
+	}
+
 }
