@@ -54,6 +54,9 @@ body > div {
 #menu-links .link {
 	color: white;
 }
+.link {
+	font: 18px 'Barlow';
+}
 #hamburger:hover {
 	cursor: pointer;
 }
@@ -91,6 +94,14 @@ body > div {
 	height: 300px;
 	background-color: white;
 }
+.submenu-link {
+	font: 20px 'Barlow';
+	color: #817f8a;
+}
+.submenu-link:hover {
+	cursor: pointer;
+	color: #dbdae3;
+}
 #bt-deck-contact {
 	background-color: white;
 	color: black;
@@ -116,6 +127,14 @@ body > div {
 	margin: 90px auto;
 	text-align: center;
 }
+.bt-contact {
+	width: 140px;
+	height: 56px;
+	border-radius: 28px;
+	border: none;
+	font: 700 16px 'Fraunces';
+}
+
 /*########################### CONTENT ###########################*/
 #main-content {
 	display: grid;
@@ -145,6 +164,27 @@ body > div {
 	grid-area: cup;
 	background: url("../images/desktop/image-stand-out.jpg") center no-repeat;
 }
+
+.content-large {
+	display: flex;
+	flex-direction: column;
+	width: 450px;
+	height: 280px;
+	margin-top: 170px;
+}
+.content-lg-title {
+	width: inherit;
+	height: 135px;
+	font: 900 40px 'Fraunces';
+	color: hsl(212, 27%, 19%);
+}
+.content-lg-paragraph {
+	width: inherit;
+	height: 130px;
+	font: 18px 'Barlow';
+	line-height: 160%;
+	color: hsl(210, 4%, 67%);
+}
 #content-stand {
 	grid-area: stand;
 	background: #fffbf8;
@@ -169,9 +209,35 @@ body > div {
 #content-photography {
 	grid-area: photography;
 	background: url("../images/desktop/image-photography.jpg") center no-repeat;
-}
-#content-photography {
 	color: hsl(198, 62%, 26%);
+}
+.content-medium {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.content-med-title {
+	width: 340px;
+	height: 60px;
+	font: 900 27px 'Fraunces';
+	margin-top: 380px;
+	text-align: center;
+}
+.content-med-paragraph {
+	width: 340px;
+	font: 16px 'Barlow';
+	text-align: center;
+	line-height: 160%;
+}
+.learnMore {
+	width: 120px;
+	height: 8px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	font: 700 15px 'Fraunces';
+	border-radius: 4px;
+	color: hsl(212, 27%, 19%);
 }
 /*########################### TESTIMONIALS ###########################*/
 #testimonials {
@@ -204,6 +270,38 @@ body > div {
 #Jennie-pic {
 	background-image: url("../images/image-jennie.jpg")
 }
+
+.client {
+	width: 370px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	margin: 0px 20px;
+	align-items: center;
+}
+.client-pic {
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	margin-top: 18px;
+	background-size: contain;
+}
+.client-review {
+	font: 600 19px 'Barlow';
+	color: hsl(213, 9%, 39%);
+	line-height: 30px;
+	margin-top: 70px;
+}
+.client-name {
+	font: 700 18px 'Fraunces';
+	color: hsl(212, 27%, 19%);
+	margin-top: 70px;
+}
+.client-position {
+	font: 600 14px 'Barlow';
+	color: hsl(210, 4%, 67%);
+	margin-top: 15px;
+}
 /*########################### COLLAGE ###########################*/
 #collage {
 	display: grid;
@@ -226,6 +324,10 @@ body > div {
 #coll-sugar {
 	grid-area: c-sugar;
 	background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+}
+.collage-pic {
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 /*########################### FOOTER ###########################*/
 #footer {
@@ -267,107 +369,8 @@ body > div {
 #footer-media > div {
 	margin: auto 15px;
 }
-.link {
-	font: 18px 'Barlow';
-}
-.bt-contact {
-	width: 140px;
-	height: 56px;
-	border-radius: 28px;
-	border: none;
-	font: 700 16px 'Fraunces';
-}
-.submenu-link {
-	font: 20px 'Barlow';
-	color: #817f8a;
-}
-.submenu-link:hover {
-	cursor: pointer;
-	color: #dbdae3;
-}
-.content-large {
-	display: flex;
-	flex-direction: column;
-	width: 450px;
-	height: 280px;
-	margin-top: 170px;
-}
-.content-lg-title {
-	width: inherit;
-	height: 135px;
-	font: 900 40px 'Fraunces';
-	color: hsl(212, 27%, 19%);
-}
-.content-lg-paragraph {
-	width: inherit;
-	height: 130px;
-	font: 18px 'Barlow';
-	line-height: 160%;
-	color: hsl(210, 4%, 67%);
-}
-.content-medium {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.content-med-title {
-	width: 340px;
-	height: 60px;
-	font: 900 27px 'Fraunces';
-	margin-top: 380px;
-	text-align: center;
-}
-.content-med-paragraph {
-	width: 340px;
-	font: 16px 'Barlow';
-	text-align: center;
-	line-height: 160%;
-}
-.learnMore {
-	width: 120px;
-	height: 8px;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	font: 700 15px 'Fraunces';
-	border-radius: 4px;
-	color: hsl(212, 27%, 19%);
-}
-.client {
-	width: 370px;
-	height: 400px;
-	display: flex;
-	flex-direction: column;
-	margin: 0px 20px;
-	align-items: center;
-}
-.client-pic {
-	width: 70px;
-	height: 70px;
-	border-radius: 35px;
-	margin-top: 18px;
-	background-size: contain;
-}
-.client-review {
-	font: 600 19px 'Barlow';
-	color: hsl(213, 9%, 39%);
-	line-height: 30px;
-	margin-top: 70px;
-}
-.client-name {
-	font: 700 18px 'Fraunces';
-	color: hsl(212, 27%, 19%);
-	margin-top: 70px;
-}
-.client-position {
-	font: 600 14px 'Barlow';
-	color: hsl(210, 4%, 67%);
-	margin-top: 15px;
-}
-.collage-pic {
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+
+/*########################### MOBILE VERSION ###########################*/
 @media screen and (max-width: 480px) {
 	body > div {
 		width: 480px;
