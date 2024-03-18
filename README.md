@@ -13,7 +13,7 @@
 
 ## Overview
 
-Frontend development for a branding agency. It is optimized for desktop and mobile users (480px). The elements have been set according to the images provided. The website has been built with HTML and CSS.
+Frontend development for a branding agency. It is optimized for desktop and mobile users (480px). The elements have been set according to the images provided. The website has been built with HTML, CSS and JavaScript. No workframes were used
 
 ### Screenshot
 
@@ -36,6 +36,7 @@ I created the website entirely for the desktop version. Once all of the elements
 - Git
 - HTML5
 - CSS
+- JavaScript
 
 ### Useful resources
 
