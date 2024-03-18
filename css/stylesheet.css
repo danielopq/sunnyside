@@ -369,6 +369,11 @@ body > div {
 #footer-media > div {
 	margin: auto 15px;
 }
+.footer-icon:hover{
+	fill:white;
+	cursor:pointer;
+}
+
 
 /*########################### MOBILE VERSION ###########################*/
 @media screen and (max-width: 480px) {
