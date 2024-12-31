@@ -35,11 +35,11 @@ header {
     letter-spacing: -0.13px;
     background-color: transparent;
     border:none;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease,color 0.3s ease;
 }
 
 @media(hover:hover){
-    .navegationBt:hover{
+    #header-navbar-desk button[class="navegationBt"]:hover{
         opacity: 0.5;
     }
 }
