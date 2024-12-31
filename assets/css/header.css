@@ -1,117 +1,73 @@
-
-#header {
+header {
+    width: 1440px;
 	height: 800px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	background: url("../images/desktop/image-header.jpg") no-repeat;
-	background-size: cover;
+	background: url('../img/header/icon-arrow-down.svg') 50% 360px/30px no-repeat,
+    url('../img/header/headerBg-desktop.jpg') center/1440px no-repeat;
+    border: solid 1px blue;
 }
-#menu-bar {
-	height: 120px;
-	width: inherit;
-	display: flex;
-	flex-direction: row;
-}
-#menu-bar > div {
-	width: 50%;
-	display: flex;
-	align-items: center;
-}
-#menu-logo {
-	width: 50%;
-	justify-content: flex-start;
-	margin-left: 50px;
-}
-#menu-logo img {
-	width: 170px;
-}
-#menu-links {
-	width: 50%;
-	justify-content: flex-end;
-	column-gap: 60px;
-	margin-right: 50px;
-}
-#menu-links .link {
-	color: white;
-}
-.link {
-	font: 18px 'Barlow';
-}
-#hamburger:hover {
-	cursor: pointer;
-}
-#menu-mobile-m {
-	width: 50%;
-	display: none !important;
-	justify-content: flex-end;
-}
-#menu-mobile-m img {
-	width: 25px;
-	margin-right: 25px;
-}
-#submenu-mobile {
-	position: absolute;
-	display: none;
-	flex-direction: column;
-	top: 80px;
-	z-index: 10;
-}
-#submenu-edge {
-	width: 0px;
-	height: 0px;
-	border-right: 20px solid white;
-	border-top: 20px solid transparent;
-	border-left: 20px solid transparent;
-	border-bottom: 20px solid white;
-	align-self: flex-end;
-}
-#submenu-buttons {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 320px;
-	height: 300px;
-	background-color: white;
-}
-.submenu-link {
-	font: 20px 'Barlow';
-	color: #817f8a;
-}
-.submenu-link:hover {
-	cursor: pointer;
-	color: #dbdae3;
-}
-#bt-deck-contact {
-	background-color: white;
-	color: black;
-}
-#bt-deck-contact:hover {
-	cursor: pointer;
-	background-color: hsla(0, 0%, 100%, 0.3);
-	color: white;
-}
-#bt-mb-contact {
-	margin: 20px auto;
-	background-color: hsl(51, 99%, 49%);
-	color: black;
-}
-#bt-mb-contact:hover {
-	cursor: pointer;
-	background-color: hsla(51, 99%, 49%, 0.3);
-}
-#creatives {
-	font: 900 40px 'Fraunces';
-	color: white;
-	letter-spacing: 10px;
-	margin: 90px auto;
-	text-align: center;
-}
-.bt-contact {
-	width: 140px;
+
+#header-navbar-desk {
+    width: 1352px;
 	height: 56px;
-	border-radius: 28px;
-	border: none;
-	font: 700 16px 'Fraunces';
+    margin: 34px 0px 0px 40px;
+	display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url('../img/header/logo.svg') left/170px no-repeat;
 }
+
+#header-navbar-desk > div{
+    width: 280px;
+    height: 25px;
+    margin-right: 47px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-navbar-desk button[class="navegationBt"]{
+    color: white;
+}
+
+.navegationBt{
+    font:600 18px/25px 'Barlow-SemiBold';
+    letter-spacing: -0.13px;
+    background-color: transparent;
+    border:none;
+    transition: opacity 0.3s ease;
+}
+
+@media(hover:hover){
+    .navegationBt:hover{
+        opacity: 0.5;
+    }
+}
+
+#contactBt{
+    width: 140px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: rgb(255,255,255);
+    color:var(--VeryDarkBlue);
+    font: 700 15px/25px 'Fraunces-Bold';
+    letter-spacing: 0.11px;
+    border: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+@media(hover:hover){
+    #contactBt:hover{
+        color:white;
+        background-color: rgba(255,255,255,0.25);
+    }
+}
+
+header h1{
+    margin-top: 105px;
+    color:white;
+    text-align: center;
+}
+
+

@@ -22,10 +22,14 @@
 }
 
 :root {
-    --VeryDarkBlue: rgb(35,48,62); /* hsl(212, 27%, 19%) */
-    --VeryDarkGrayish: rgb(90,99,108); /*hsl(213, 9%, 39%)*/
-    --DarkGrayish: rgb(129,132,152); /* hsl(232, 10%, 55%)*/
-    --GrayishBlue: rgb(167,171,174); /* hsl(210, 4%, 67%)*/
+    --VeryDarkBlue: rgb(35, 48, 62);
+    /* hsl(212, 27%, 19%) */
+    --VeryDarkGrayish: rgb(90, 99, 108);
+    /*hsl(213, 9%, 39%)*/
+    --DarkGrayish: rgb(129, 132, 152);
+    /* hsl(232, 10%, 55%)*/
+    --GrayishBlue: rgb(167, 171, 174);
+    /* hsl(210, 4%, 67%)*/
 }
 
 * {
@@ -34,11 +38,30 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+nav {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font: 900 56px/69px 'Fraunces-Black';
+    letter-spacing: 8.75px;
 }
