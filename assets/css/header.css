@@ -5,7 +5,6 @@ header {
 	flex-direction: column;
 	background: url('../img/header/icon-arrow-down.svg') 50% 360px/30px no-repeat,
     url('../img/header/headerBg-desktop.jpg') center/1440px no-repeat;
-    border: solid 1px blue;
 }
 
 #header-navbar-desk {
