@@ -33,6 +33,33 @@ footer{
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    border:solid 1px red;
+}
+
+#facebookBt{
+    background-image: url('../img/footer/facebook.svg');
+}
+#instagramBt{
+    background-image: url('../img/footer/instagram.svg');
+}
+#twitterBt{
+    background-image: url('../img/footer/twitter.svg');
+}
+#pinterestBt{
+    background-image: url('../img/footer/pinterest.svg');
+}
+
+@media(hover:hover){
+    #facebookBt:hover{
+        background-image: url('../img/footer/facebook-hover.svg');
+    }
+    #instagramBt:hover{
+        background-image: url('../img/footer/instagram-hover.svg');
+    }
+    #twitterBt:hover{
+        background-image: url('../img/footer/twitter-hover.svg');
+    }
+    #pinterestBt:hover{
+        background-image: url('../img/footer/pinterest-hover.svg');
+    }
 }
 
