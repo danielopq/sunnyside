@@ -1,0 +1,40 @@
+#main-content {
+    width: 1440px;
+    height: auto;
+}
+
+#main-content > div{
+    width: inherit;
+    height: 600px;
+    border:solid 1px red;
+    display: flex;
+    flex-direction: row;
+}
+
+#transform{
+    justify-content: flex-start;
+    background: #FFFCF8 url('../img/main-content/transform-desktop.jpg') right/720px no-repeat;
+}
+
+#standOut{
+    justify-content: flex-end;
+    background: #FFFCF8 url('../img/main-content/stand-out-desktop.jpg') left/720px no-repeat;
+}
+
+#transform > div, #standOut > div{
+    width: 445px;
+    height: 286px;
+    margin: 158px 165px 0px 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border:solid 1px red;
+}
+
+#transform p, #standOut p{
+    margin: 32px 0px 0px 0px;
+    font: 600px 18px 30px 'Barlow-SemiBold';
+    letter-spacing: -0.13px;
+    color: var(--DarkGrayish);
+    border:solid 1px red;
+}
