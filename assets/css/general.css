@@ -71,6 +71,11 @@ h2 {
     letter-spacing: -0.29px;
 }
 
+h3 {
+    font: 900 28px/35px 'Fraunces-Black';
+    letter-spacing: -0.2px;
+}
+
 .mediaBt{
     width: 20px;
     height: 20px;

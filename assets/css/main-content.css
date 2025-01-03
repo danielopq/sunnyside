@@ -41,11 +41,26 @@
 #design-photography {
     padding: 398px 190px 0px;
     justify-content: space-between;
-    border:solid 1px blue;
+    text-align: center;
+    background:
+    url('../img/main-content/graphic-design-desktop.jpg') left/720px no-repeat,
+    url('../img/main-content/photography-desktop.jpg') right/720px no-repeat
+    ;
 }
 
 #design-photography > div{
     width: 339px;
     height: 143px;
-    border:solid 1px red;
+}
+
+#design-photography h3{
+    color:#052C3B;
+    opacity:0.75;
+}
+
+#design-photography p{
+    margin-top: 27px;
+    font: 600 16px/27px 'Barlow-SemiBold';
+    letter-spacing: -0.11px;
+    color:#19536C;
 }
