@@ -6,7 +6,6 @@
 #main-content > div{
     width: inherit;
     height: 600px;
-    border:solid 1px red;
     display: flex;
     flex-direction: row;
 }
@@ -36,5 +35,17 @@
     font: 600px 18px 30px 'Barlow-SemiBold';
     letter-spacing: -0.13px;
     color: var(--DarkGrayish);
+    border:solid 1px red;
+}
+
+#design-photography {
+    padding: 398px 190px 0px;
+    justify-content: space-between;
+    border:solid 1px blue;
+}
+
+#design-photography > div{
+    width: 339px;
+    height: 143px;
     border:solid 1px red;
 }
