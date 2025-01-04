@@ -1,0 +1,10 @@
+#collage{
+    width: inherit;
+    height: 447px;
+    background:
+    url('../img/collage/milkbottles-desktop.jpg') left/360px no-repeat,
+    url('../img/collage/orange-desktop.jpg') 360px 50%/360px no-repeat,
+    url('../img/collage/cone-desktop.jpg') 720px 50%/360px no-repeat,
+    url('../img/collage/sugar-desktop.jpg') right/360px no-repeat
+    ;
+}
