@@ -1,0 +1,74 @@
+#testimonials {
+	width: inherit;
+	height: 777px;
+	background-color: #fffbf8;
+}
+
+#testimonials-title {
+	width: inherit;
+	text-align: center;
+	letter-spacing: 5px;
+	font: 900 20px 'Fraunces-Black';
+	letter-spacing: 5px;
+	color: var(--GrayishBlue);
+	margin-top: 160px;
+}
+
+#testimonials-content {
+	width: inherit;
+	padding: 0px 165px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 81px;
+}
+
+.client {
+	width: 350px;
+	height: 351px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.client-pic {
+	width: 72px;
+	height: 72px;
+	border-radius: 36px;
+	background-size: contain;
+}
+
+#Emily-pic {
+	background-image: url("../img/testimonials/image-emily.jpg")
+}
+
+#Thomas-pic {
+	background-image: url("../img/testimonials/image-thomas.jpg")
+}
+
+#Jennie-pic {
+	background-image: url("../img/testimonials/image-jennie.jpg")
+}
+
+
+.client-review {
+	font: 600 18px/32px 'Barlow-SemiBold';
+	letter-spacing: -0.13px;
+	color: var(--VeryDarkGrayish);
+	margin-top: 58px;
+}
+
+.client-name {
+	font: 900 18px/22px 'Fraunces-Black';
+	letter-spacing: -0.13px;
+	color: var(--VeryDarkBlue);
+	margin-top: 69px;
+}
+
+.client-position {
+	font: 600 14px/25px 'Barlow-SemiBold';
+	letter-spacing: -0.1px;
+	margin-top: 9px;
+	color: var(--GrayishBlue);
+}
