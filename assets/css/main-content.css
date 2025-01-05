@@ -10,6 +10,10 @@
     flex-direction: row;
 }
 
+#main-content h2{
+    color: var(--VeryDarkBlue);
+}
+
 #transform{
     justify-content: flex-start;
     background: #FFFCF8 url('../img/main-content/transform-desktop.jpg') right/720px no-repeat;
@@ -31,7 +35,7 @@
 
 .mc-text{
     margin: 32px 0px 40px;
-    font: 600px 18px 30px 'Barlow-SemiBold';
+    font: 600 18px/30px 'Barlow-SemiBold';
     letter-spacing: -0.13px;
     color: var(--DarkGrayish);
 }
