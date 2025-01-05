@@ -3,7 +3,7 @@ header {
 	height: 800px;
 	display: flex;
 	flex-direction: column;
-	background: url('../img/header/icon-arrow-down.svg') 50% 360px/30px 107px no-repeat,
+	background: url('../img/header/icon-arrow-down.svg') 50% 360px/32px 109px no-repeat,
     url('../img/header/headerBg-desktop.jpg') center/1440px no-repeat;
 }
 
@@ -18,7 +18,7 @@ header {
 }
 
 #header-navbar-desk > div{
-    width: 280px;
+    width: 290px;
     height: 25px;
     margin-right: 47px;
     display: inline-flex;
