@@ -3,7 +3,7 @@ header {
 	height: 800px;
 	display: flex;
 	flex-direction: column;
-	background: url('../img/header/icon-arrow-down.svg') 50% 360px/32px 109px no-repeat,
+	background: url('../img/header/icon-arrow-down.svg') 50% 362px/32px 111px no-repeat,
     url('../img/header/headerBg-desktop.jpg') center/1440px no-repeat;
 }
 
@@ -15,12 +15,13 @@ header {
     align-items: center;
     justify-content: flex-end;
     background: url('../img/header/logo.svg') left/170px no-repeat;
+    border: solid 1px red;
 }
 
 #header-navbar-desk > div{
     width: 290px;
     height: 25px;
-    margin-right: 47px;
+    margin-right: 42px;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
