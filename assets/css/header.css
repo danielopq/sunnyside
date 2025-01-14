@@ -69,4 +69,21 @@ header h1{
     text-align: center;
 }
 
+/*##################################### MOBILE VERSION #####################################*/
 
+@media screen and (max-width: 768px) {
+    header {
+        width: 375px;
+        height: 538px;
+        background: url('../img/header/icon-arrow-down.svg') 50% 294px/34px 113px no-repeat,
+        url('../img/header/headerBg-mobile.jpg') bottom/375px no-repeat;
+    }
+
+    #header-navbar-desk {
+        display: none;
+    }
+
+    header h1{
+        margin-top: 88px;
+    }
+}

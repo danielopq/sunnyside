@@ -85,3 +85,12 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/*##################################### MOBILE VERSION #####################################*/
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font: 900 40px/49px 'Fraunces-Black';
+        letter-spacing: 6.25px;
+    }
+}
