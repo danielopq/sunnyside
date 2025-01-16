@@ -1,15 +1,14 @@
-// JavaScript Document
-window.onload=start;
-
-function start(){
-	document.getElementById("hamburger").addEventListener('click',showSubmenu,false);
-}
-
-function showSubmenu(){
-	if(document.getElementById("submenu-mobile").getAttribute("style") == "display:flex;"){
-		document.getElementById("submenu-mobile").setAttribute("style","display:none;");
+/**
+ * Hide or shows the mobile menu.
+ */
+const showSubmenu = ()=>{
+	if(document.getElementById("navbar-mobile-menu").getAttribute("style") == "display:flex;"){
+		document.getElementById("navbar-mobile-menu").setAttribute("style","display:none;");
 	}else{
-		document.getElementById("submenu-mobile").setAttribute("style","display:flex;");
+		document.getElementById("navbar-mobile-menu").setAttribute("style","display:flex;");
 	}
-	
 }
+
+(()=>{
+	document.getElementById("hamburger").addEventListener('click',showSubmenu,false);
+})()
