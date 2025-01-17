@@ -33,17 +33,18 @@ header {
 
 #header-navbar-mobile{
     position: absolute;
-    width: 327px;
+    width: 100%;
     height: auto;
-    margin-top: 32px;
-    display: flex;
+    padding: 0px 24px;
+    top: 32px;
+    display: none;
     flex-direction: column;
     align-items: flex-end;
     z-index: 1;
 }
 
 #navbar-mobile-top{
-    width: inherit;
+    width: 100%;
     height: 24px;
     display: inline-flex;
     align-items: center;
@@ -125,18 +126,23 @@ header h1{
 
 @media screen and (max-width: 768px) {
     header {
-        width: 375px;
-        height: 538px;
-        background: url('../img/header/icon-arrow-down.svg') 50% 294px/34px 113px no-repeat,
-        url('../img/header/headerBg-mobile.jpg') bottom/375px no-repeat;
+        width: 100%;
+        height: calc(100vw/0.7);
+        background: url('../img/header/icon-arrow-down.svg') 50% calc((100vw/0.7)/1.8)/34px 113px no-repeat,
+        url('../img/header/headerBg-mobile.jpg') bottom/100% no-repeat;
     }
 
     #header-navbar-desk {
         display: none;
     }
 
+    #header-navbar-mobile{
+        display: flex;
+    }
+    
     header h1{
-        margin-top: 144px;
+        width: 327px;
+        margin-top: calc((100vw/0.7)/3.6);
     }
 
     .navegationBt{
