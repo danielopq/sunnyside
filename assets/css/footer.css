@@ -1,11 +1,12 @@
 footer{
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     height: 350px;
     padding-top: 145px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #90D4C6 url('../img/footer/logo-blue.svg') 629px 72px/170px no-repeat;
+    background: #90D4C6 url('../img/footer/logo-blue.svg') 50% 72px/170px no-repeat;
 }
 
 #footer-navbar{
@@ -60,6 +61,14 @@ footer{
     }
     #pinterestBt:hover{
         background-image: url('../img/footer/pinterest-hover.svg');
+    }
+}
+
+/*##################################### MOBILE VERSION #####################################*/
+
+@media screen and (max-width: 768px) {
+    footer{
+        background-position: 50% 64px;
     }
 }
 
