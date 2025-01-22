@@ -36,7 +36,8 @@
 	width: 72px;
 	height: 72px;
 	border-radius: 36px;
-	background-size: contain;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 #Emily-pic {
@@ -71,4 +72,41 @@
 	letter-spacing: -0.1px;
 	margin-top: 9px;
 	color: var(--GrayishBlue);
+}
+
+/*##################################### MOBILE VERSION #####################################*/
+
+@media screen and (max-width: 768px) {
+	#testimonials {
+		width: 100vw;
+		height: 1258px;
+	}
+	
+	#testimonials-title {
+		font: 900 16px 'Fraunces-Black';
+		letter-spacing: 4px;
+		margin-top: 64px;
+	}
+	
+	#testimonials-content {
+		height: 1024px;
+		padding: 0px;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 64px;
+	}
+	
+	.client {
+		width: 327px;
+		height: auto;
+		
+	}
+
+	.client-review {
+		margin-top: 32px;
+	}
+	
+	.client-name {
+		margin-top: 32px;
+	}
 }
