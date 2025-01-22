@@ -12,13 +12,12 @@
 
 @media screen and (max-width: 768px) {
     #collage{
-        border: solid 1px red;
         width: 100vw;
-        height: calc(100vw*2);
+        height: 100vw;
         background:
         url('../img/collage/milkbottles-mobile.jpg') 0% 0%/calc(100vw/2) no-repeat,
-        url('../img/collage/orange-mobile.jpg') 50% 0%/calc(100vw/2) no-repeat,
-        url('../img/collage/cone-mobile.jpg') 0% 50%/calc(100vw/2) no-repeat,
-        url('../img/collage/sugar-mobile.jpg') 50% 50%/calc(100vw/2) no-repeat;
+        url('../img/collage/orange-mobile.jpg') 100% 0%/calc(100vw/2) no-repeat,
+        url('../img/collage/cone-mobile.jpg') 0% 100%/calc(100vw/2) no-repeat,
+        url('../img/collage/sugar-mobile.jpg') 100% 100%/calc(100vw/2) no-repeat;
     }
 }
