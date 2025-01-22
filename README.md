@@ -1,5 +1,3 @@
-
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -7,13 +5,12 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
 ## Overview
 
-Frontend development for a branding agency. It is optimized for both desktop and mobile users. The elements have been arranged according to the provided images. The website was built using only HTML and CSS, with no frameworks or libraries used.
+I handled the frontend development for a branding agency, creating a website optimized for both desktop and mobile users. All elements were meticulously arranged to align with the design specifications provided in the reference images, ensuring a visually accurate and cohesive result. The website was built entirely from scratch using only HTML and CSS, without relying on any frameworks or libraries. This approach provided full control over the codebase, allowing for lightweight and highly customizable development tailored to the provided design.
 
 ### Screenshot
 
@@ -27,11 +24,11 @@ Frontend development for a branding agency. It is optimized for both desktop and
 
 ## My process
 
-I created the website entirely for the desktop version. Once all of the elements were in place and met the design requirements, I adapted it to the mobile version using just a CSS media query.
+I developed the website initially for the desktop version, ensuring all elements were correctly implemented and aligned with the design specifications. After finalizing the desktop layout and functionality, I adapted the website for mobile devices using CSS media queries. This approach allowed me to create a responsive design that maintained the integrity of the original layout while optimizing usability and aesthetics for smaller screens.
 
 ### Built with
 
-- Adobe dreamweaver / visual studio code
+- visual studio code
 - Adobe photoshop
 - Figma
 - Git
@@ -42,4 +39,5 @@ I created the website entirely for the desktop version. Once all of the elements
 
 I am a focused and dedicated professional with a strong educational foundation and hands-on experience in programming and web development. My expertise in PHP, SQL, JavaScript, HTML, CSS, JAVA and other modern web technologies enables me to build engaging, efficient, and visually appealing websites that meet both user needs and business goals.
 
+- Personal website: [https://danielmartinez.co.uk]
 - linkedin - [www.linkedin.com/in/danielmartinezduque]
