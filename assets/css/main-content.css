@@ -14,13 +14,16 @@
     color: var(--VeryDarkBlue);
 }
 
-#transform {
+#transform,
+#standOut {
     justify-content: flex-start;
+}
+
+#transform {
     background: #FFFCF8 url('../img/main-content/transform-desktop.jpg') right/720px no-repeat;
 }
 
 #standOut {
-    justify-content: flex-end;
     background: #FFFCF8 url('../img/main-content/stand-out-desktop.jpg') left/720px no-repeat;
 }
 
@@ -82,8 +85,6 @@
     background-color: #FE7766;
 }
 
-
-
 #design-photography {
     padding: 398px 190px 0px;
     justify-content: space-between;
@@ -118,104 +119,47 @@
     }
 
     #main-content>div {
-        width: 100vw;;
-        height: auto;
         flex-direction: column;
-        border: solid 1px blue;
     }
-    
+
+    #transform,
+    #standOut {
+        height: calc(100vw*2) !important;
+        text-align: center;
+        justify-content: flex-end;
+        padding-bottom: 64px;
+    }
+
     #transform {
-        justify-content: flex-start;
-        background: #FFFCF8 url('../img/main-content/transform-mobile.jpg') center/100vw no-repeat;
-        /* border: solid 1px red; */
+        background: #FFFCF8 url('../img/main-content/transform-mobile.jpg') top/100vw no-repeat;
     }
 
     #standOut {
-        justify-content: flex-end;
-        background: #FFFCF8 url('../img/main-content/stand-out-mobile.jpg') center/100vw no-repeat;
+        background: #FFFCF8 url('../img/main-content/stand-out-mobile.jpg') top/100vw no-repeat;
     }
 
     #transform>div,
     #standOut>div {
-        width: 445px;
-        height: 286px;
-        margin: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
-    .mc-text {
-        margin: 32px 0px 40px;
-        font: 600 18px/30px 'Barlow-SemiBold';
-        letter-spacing: -0.13px;
-        color: var(--DarkGrayish);
-    }
-
-    .learnMore {
-        width: 135px;
-        height: auto;
-        display: flex;
-        flex-direction: column;
+        width: 327px;
+        height: 309px;
+        margin: 0px auto;
         align-items: center;
-        text-align: center;
-        font: 15px/25px 'Fraunces-Black';
-        letter-spacing: 1px;
-        color: var(--VeryDarkBlue);
-        cursor: pointer;
-    }
-
-
-    @media(hover:hover) {
-        .learnMore:hover.learnMore>div {
-            opacity: 1;
-        }
-    }
-
-
-    .learnMore p {
-        z-index: 1;
-    }
-
-    .learnMore>div {
-        width: inherit;
-        height: 10px;
-        margin-top: -10px;
-        border-radius: 28px;
-        opacity: 0.25;
-    }
-
-    #transformBt>div {
-        background-color: #FAD400;
-    }
-
-    #standOutBt>div {
-        background-color: #FE7766;
     }
 
     #design-photography {
-        padding: 398px 190px 0px;
+        height: calc((100vw*1.6)*2)!important;
+        padding: 0px;
+        align-items: center;
         justify-content: space-between;
-        text-align: center;
         background:
-            url('../img/main-content/graphic-design-desktop.jpg') left/720px no-repeat,
-            url('../img/main-content/photography-desktop.jpg') right/720px no-repeat;
+            url('../img/main-content/graphic-design-mobile.jpg') top/100vw no-repeat,
+            url('../img/main-content/photography-mobile.jpg') bottom/100vw no-repeat;
+        
     }
 
     #design-photography>div {
-        width: 339px;
-        height: 143px;
-    }
-
-    #design-photography h3 {
-        color: #052C3B;
-        opacity: 0.75;
-    }
-
-    #design-photography p {
-        margin-top: 27px;
-        font: 600 16px/27px 'Barlow-SemiBold';
-        letter-spacing: -0.11px;
-        color: #19536C;
+        width: 327px;
+        height: calc(100vw*1.6);
+        padding-top: calc((100vw*1.6)/1.5);
     }
 }
